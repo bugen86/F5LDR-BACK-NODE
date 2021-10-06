@@ -1,0 +1,26 @@
+{
+  "name": "f5ldr",
+  "version": "1.0.0",
+  "description": "API REST para canchas de futbol, ventas, compras, ganancias",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bugen86/F5LDR.git"
+  },
+  "author": "Mauro Asselborn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bugen86/F5LDR/issues"
+  },
+  "homepage": "https://github.com/bugen86/F5LDR#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.8"
+  }
+}
