@@ -11,6 +11,6 @@ module.exports = {
                 this.connection = connection
                 console.log(`Conectado a la Base de Datos...`)
             })
-            .catch((error) => console.log)
+            .catch((error) => console.log(error))
     },
 }

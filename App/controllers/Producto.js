@@ -11,7 +11,7 @@ const index = (req, res) => {
 
 const crear = (req, res) => {
     let producto = new ProductoModel(req.body)
-    producto.save().then((producto) => res.status(201).send(producto))
+    producto.save().then((producto) => res.status(201).send(producto._id))
 }
 
 const buscar = (req, res) => {}
