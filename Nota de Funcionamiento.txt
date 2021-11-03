@@ -1,0 +1,12 @@
+resumen del alcance de la API REST 
+
+1- a travez de los distintos endpoints se puede acceder a 
+	a- informacion de ventas con sus respectivas fechas
+	b- informacion de gastos mensuales con su respectiva fecha
+	c- creacion de venta de productos del dia
+	d- creacion de gasto (proveedores, gastos varios, etc)
+	e- informacion de ganancias del dia
+	f- informacion de ganancias del mes completo
+
+	nota la ganancia se calcula tomado solo el valor del prodcuto
+	menos el valor de la compra del mismo producto

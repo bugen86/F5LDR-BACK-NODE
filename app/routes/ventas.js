@@ -1,6 +1,6 @@
-const Router = require('express').Router()
+const router = require('express').Router()
 const ventasController = require('../controllers/Ventas')
 
-Router.get('/', ventasController.index)
+router.get('/', ventasController.index)
 
-module.exports = Router
+module.exports = router

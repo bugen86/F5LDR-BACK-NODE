@@ -5,15 +5,17 @@ const cors = require('cors')
 const App = express()
 
 /* Rutas */
-const RutaProductos = require('./routes/productos')
-const RutaVentas = require('./routes/ventas')
+const rutaProductos = require('./routes/productos')
+const rutaVentas = require('./routes/ventas')
+const rutaGastos = require('./routes/gastos')
 const { application } = require('express')
 
-App.use(bodyParser.json())
-App.use(bodyParser.urlencoded({ extended: false }))
-App.use(cors())
+App.use(express.json())
+    .use(express.urlencoded({ extended: false }))
+    .use(cors())
 
-App.use('/productos', RutaProductos)
-App.use('/ventas', RutaVentas)
+    .use('/productos', rutaProductos)
+    .use('/ventas', rutaVentas)
+    .use('/gastos', rutaGastos)
 
 module.exports = App
