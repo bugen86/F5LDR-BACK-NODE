@@ -1,6 +1,7 @@
 const router = require('express').Router()
 const ventasController = require('../controllers/Ventas')
 
-router.get('/', ventasController.index)
+router.post('/', ventasController.venta)
+router.get('/', ventasController.mostrar)
 
 module.exports = router

@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const ProductoSchema = new mongoose.Schema(
+const GastoSchema = new mongoose.Schema(
     {
         nombre: {
             type: String,
@@ -11,11 +11,11 @@ const ProductoSchema = new mongoose.Schema(
             enum: ['cervezas', 'gaseosas', 'snaks'],
             required: true,
         },
-        precio: {
+        valor: {
             type: Number,
             required: true,
         },
-        stock: {
+        cantidad: {
             type: Number,
             default: 0,
         },
@@ -30,4 +30,4 @@ const ProductoSchema = new mongoose.Schema(
     }
 )
 
-module.exports = mongoose.model('Producto', ProductoSchema)
+module.exports = mongoose.model('Gasto', GastoSchema)
