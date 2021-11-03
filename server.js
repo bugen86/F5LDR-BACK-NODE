@@ -6,5 +6,5 @@ DataBase.connect()
 
 App.listen(CONFIG.PORT, (error) => {
     if (error) return console.log(error)
-    console.log(`Servidor corriendo correctamente en el puerto ${CONFIG.PORT}`)
+    console.log(`Servidor corriendo correctamente en el puerto : ${CONFIG.PORT}`)
 })
