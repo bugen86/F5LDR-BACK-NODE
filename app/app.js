@@ -8,7 +8,6 @@ const App = express()
 const rutaProductos = require('./routes/productos')
 const rutaVentas = require('./routes/ventas')
 const rutaGastos = require('./routes/gastos')
-const { application } = require('express')
 
 App.use(express.json())
     .use(express.urlencoded({ extended: false }))
