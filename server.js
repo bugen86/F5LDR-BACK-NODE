@@ -1,5 +1,5 @@
-const DataBase = require('./App/config/database')
-const CONFIG = require('./App/config/config')
+const DataBase = require('./app/config/database')
+const CONFIG = require('./app/config/config')
 const App = require('./app/app')
 
 DataBase.connect()
