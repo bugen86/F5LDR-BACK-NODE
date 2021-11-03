@@ -6,7 +6,6 @@ const App = express()
 /* Rutas */
 const rutaProductos = require('./routes/productos')
 const rutaVentas = require('./routes/ventas')
-const rutaGastos = require('./routes/gastos')
 
 App.use(express.json())
     .use(express.urlencoded({ extended: false }))

@@ -14,7 +14,10 @@ const crear = (req, res) => {
     producto.save().then((producto) => res.status(201).send(producto))
 }
 
-const buscar = (req, res) => {}
+const buscar = (req, res) => {
+    res.send('hola')
+}
+
 module.exports = {
     index,
     crear,
