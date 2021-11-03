@@ -5,7 +5,7 @@ const venta = (req, res) => {
     venta.save().then((venta) => res.status(201).send(venta))
 }
 
-const mostrar = (_, res) => {
+const mostrar = (req, res) => {
     VentaModel.find({}).then((ventas) => res.send(ventas))
 }
 

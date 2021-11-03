@@ -1,5 +1,4 @@
 const express = require('express')
-const bodyParser = require('body-parser')
 const cors = require('cors')
 
 const App = express()
@@ -15,6 +14,6 @@ App.use(express.json())
 
     .use('/productos', rutaProductos)
     .use('/ventas', rutaVentas)
-    .use('/gastos', rutaGastos)
+//.use('/gastos', rutaGastos)
 
 module.exports = App
